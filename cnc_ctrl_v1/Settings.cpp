@@ -256,7 +256,7 @@ byte settingsStoreGlobalSetting(const byte& parameter,const float& value){
               break;
         case 7: 
               sysSettings.kinematicsType = value;
-              Serial.print("Kinematics set to option: ");
+              Serial.print("Kinematics set to option ");
               Serial.println(sysSettings.kinematicsType);
               break;
         case 8: 

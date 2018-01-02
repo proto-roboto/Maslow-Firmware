@@ -255,9 +255,16 @@ byte settingsStoreGlobalSetting(const byte& parameter,const float& value){
               sysSettings.sledCG = value;
               break;
         case 7: 
-              sysSettings.kinematicsType = value;
-              Serial.print("Kinematics set to option ");
-              Serial.println(sysSettings.kinematicsType);
+            
+            sysSettings.kinematicsType = value;
+            
+            if(sysSettings.kinematicsType == 1){
+                Serial.println("Kinematics set to quadrilateral");
+            }
+            else{
+                Serial.println("Kinematics set to triangular");
+            }
+              
               break;
         case 8: 
               sysSettings.rotationDiskRadius = value;

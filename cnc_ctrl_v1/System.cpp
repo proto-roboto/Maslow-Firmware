@@ -105,10 +105,10 @@ void   setupAxes(){
     else if(pcbVersion == 1){
         //PCB v1.1 Detected
         //MP1 - Right Motor
-        ENCODER1A = 20; // INPUT
-        ENCODER1B = 21; // INPUT
-        IN1 = 6;        // OUTPUT
-        IN2 = 4;        // OUTPUT
+        ENCODER1A = 21; // INPUT
+        ENCODER1B = 20; // INPUT
+        IN1 = 4;        // OUTPUT
+        IN2 = 6;        // OUTPUT
         ENA = 5;        // PWM
         
         //MP2 - Z-axis
@@ -119,10 +119,10 @@ void   setupAxes(){
         ENB = 8;        // PWM
         
         //MP3 - Left Motor
-        ENCODER3A = 2;   // INPUT
-        ENCODER3B = 3;   // INPUT
-        IN5 = 10;        // OUTPUT
-        IN6 = 11;        // OUTPUT
+        ENCODER3A = 3;   // INPUT
+        ENCODER3B = 2;   // INPUT
+        IN5 = 11;        // OUTPUT
+        IN6 = 10;        // OUTPUT
         ENC = 12;        // PWM
     }
     else if(pcbVersion == 2){
